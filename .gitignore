@@ -1,0 +1,26 @@
+# Python cache / bytecode
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+
+# VS Code settings
+.vscode/
+
+# Weights & Biases logs
+wandb/
+
+# Model checkpoints and results
+resultat/
+
+# Jupyter / temp
+*.ipynb_checkpoints/
+
+# System files
+.DS_Store
+
+# (Optional) dataset – fjern denne linje hvis du VIL versionere data
+datasets/
