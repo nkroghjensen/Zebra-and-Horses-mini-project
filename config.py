@@ -38,7 +38,7 @@ NUM_CLASSES = 2
 # Select which model implementation to use:
 # "resnet_pretrained"  torchvision ResNet-18 with ImageNet weights (transfer learning)
 # "resnet_custom"      manually implemented ResNet-18 architecture
-MODEL_TYPE = "resnet_pretrained"
+MODEL_TYPE = "resnet_custom"
 
 
 #______________________________________________________________________________________________________________________________
@@ -49,11 +49,11 @@ MODEL_TYPE = "resnet_pretrained"
 # Batch size determines how many images are processed in each training step.
 # Larger batches yield more stable gradient estimates and more reliable accuracy metrics,
 # but require more GPU memory. 128 is a practical balance.
-BATCH_SIZE = 128
+BATCH_SIZE = 32
 
 # Number of epochs defines how long the model is allowed to train.
 # More epochs can improve performance until the model saturates.
-NUM_EPOCHS = 30
+NUM_EPOCHS = 50
 
 # The learning rate controls the magnitude of updates to the network parameters.
 # A small LR learns slowly but stably; a large LR risks overshooting and unstable training.
@@ -74,7 +74,7 @@ LR_PATIENCE = 3
 LR_FACTOR = 0.25
 
 # Number of worker processes used by DataLoader for faster data loading.
-NUM_WORKERS = 4
+NUM_WORKERS = 2
 
 
 #______________________________________________________________________________________________________________________________
@@ -111,7 +111,7 @@ COLOR_JITTER_SATURATION = 0.05
 SAVE_DIR = "resultat"
 
 # Base filename for saving model checkpoints.
-MODEL_SAVE_NAME = "model_resnet18.pth"
+MODEL_SAVE_NAME = "model_resnet18_custom.pth"
 
 
 #______________________________________________________________________________________________________________________________
